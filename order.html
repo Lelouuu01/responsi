@@ -17,7 +17,7 @@
       }
 
       header {
-        background: rgba(156, 146, 146, 0.5);
+        background: none;
         position: relative;
         color: #fff;
         padding-top: 1px;
@@ -29,7 +29,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 0px 20px;
-        background-color: transparent;
+        background-color: none;
       }
 
       nav ul {
@@ -53,16 +53,20 @@
         align-items: center;
       }
 
+      nav ul li a i {
+        margin-right: 8px;
+      }
+
       nav ul li a:hover {
         background-color: #fff;
         color: #000;
-        border-radius: 0;
+        border-radius: 0; /* Menghapus lengkungan saat hover */
       }
 
       nav ul li.active a {
         background-color: #fff;
         color: #000;
-        border-radius: 0;
+        border-radius: 0; /* Menghapus lengkungan pada menu aktif */
       }
 
       .container {
