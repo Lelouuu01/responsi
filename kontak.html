@@ -10,28 +10,25 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: url("kontak.jpg") no-repeat center center fixed;
-        background-size: cover;
+        background: url("kontak.jpg") no-repeat center center fixed; /* Menambahkan background gambar */
+        background-size: cover; /* Membuat gambar menutupi seluruh area */
         color: #333;
       }
 
       header {
-        background: #7b7b6e;
+        background: none;
+        position: relative;
         color: #fff;
-        padding: 15px 20px;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding-top: 1px;
+        height: auto;
+      }
+
+      nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
-
-      header h1 {
-        font-size: 1.5em;
-        margin: 0;
-        color: #fff;
+        padding: 0px 20px;
+        background-color: none;
       }
 
       nav ul {
@@ -39,37 +36,36 @@
         margin: 0;
         padding: 0;
         display: flex;
-        align-items: center;
       }
 
       nav ul li {
-        margin: 0 10px;
+        margin: 0 15px;
       }
 
       nav ul li a {
         text-decoration: none;
         color: #fff;
-        padding: 8px 15px;
-        border-radius: 0px;
-        font-size: 1em;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.5s ease;
         display: flex;
         align-items: center;
       }
 
-      nav ul li a:hover {
-        background: #fff;
-        color: #000000;
-        transform: scale(1.1);
-      }
-
-      nav ul li a.active {
-        background: #fff;
-        color: #000000;
-        font-weight: bold;
-      }
-
       nav ul li a i {
         margin-right: 8px;
+      }
+
+      nav ul li a:hover {
+        background-color: #fff;
+        color: #000;
+        border-radius: 0; /* Menghapus lengkungan saat hover */
+      }
+
+      nav ul li.active a {
+        background-color: #fff;
+        color: #000;
+        border-radius: 0; /* Menghapus lengkungan pada menu aktif */
       }
 
       .contact-section {
@@ -149,17 +145,15 @@
   </head>
   <body>
     <header>
-      <h1>Galaxy Sport Center</h1>
       <nav>
+        <h1>Galaxy Sport Center</h1>
         <ul>
           <li>
-            <a href="index.html"><i class="fa fa-home"></i> Home</a>
+            <a href="index.html"> <i class="fa fa-home"></i> Home </a>
           </li>
           <li><a href="fasilitas.html">Fasilitas</a></li>
           <li><a href="order.html">Pemesanan</a></li>
-          <li>
-            <a href="#" class="active">Kontak</a>
-          </li>
+          <li class="active"><a href="#">Kontak</a></li>
         </ul>
       </nav>
     </header>
@@ -193,9 +187,5 @@
         <a href="https://wa.me/6282310000063" target="_blank" class="fa fa-whatsapp"></a>
       </div>
     </div>
-
-    <footer>
-      <p>&copy; 2025 Galaxy Sport Center. All Rights Reserved.</p>
-    </footer>
   </body>
 </html>
